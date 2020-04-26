@@ -1,0 +1,95 @@
+@media(max-width:670px) {
+    .service {
+        width: 100%;
+    }
+    .project {
+        width: 100%;
+    }
+
+    .project-img img{
+        max-width: 100%;
+        max-height: 100%;
+        display:flex;
+        flex-wrap: wrap;
+    }
+
+    .profiles{
+        padding-top: 20px;
+    }
+    .profile{
+        width:100%;
+        display: block-inline;
+    }
+
+    .hamburger {
+        display: block;
+        padding: 0px 20px;
+    }
+    .header-right{
+        display: none;
+    }
+    .header-right.responsive{
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        padding:0;
+    }
+    .header-right.responsive a{
+        flex: auto;
+        margin:0 auto;
+
+    }
+
+    .profiles{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: auto;
+        padding:0 auto;
+    }
+
+    
+}
+/* untuk Tablet */
+@media (max-width: 1170px) {
+
+    .container {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+    .service {
+        width: 50%;
+    }
+
+    .header-right {
+        padding-right: 100px;
+        
+    }
+        
+    .header-right a:hover {
+            background-color: white;
+            color: black;
+    }
+        
+    .header-right a {
+            line-height: 65px;
+            padding: 0 25px;
+            box-sizing: border-box;
+            align-items: center;
+            color: rgb(255, 255, 255);
+            display: block;
+            float: left;
+            transition: all 0.5s;
+     }
+
+        .profile {
+           width: 50%;
+           padding: 5px;
+           box-sizing: border-box;    
+        }
+         
+        .project-img img {
+            width: 500px;
+        }
+}

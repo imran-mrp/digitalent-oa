@@ -11,8 +11,14 @@ a {
 }
 
 .container {
-    width: 1020px;
+    width: 100%;
     margin: 0 auto;
+    
+    width: 100%;   /*lebar containter 100% agar jika di zoom in menu di heade-right tetep tampil */
+    max-width: 1170px;   /*jika di zoom out, posisi objek di container tetap ditengah sesuai ukuran max */
+    margin: 0 auto;
+    padding: 0 25px;
+
 }
 
 header {
@@ -26,7 +32,6 @@ header {
 
 .header-left {
     line-height: 65px;
-    padding: 0 25px;
     float: left;
 }
 
@@ -40,7 +45,7 @@ header {
 
 .header-right {
     float: right;
-    margin-right: -25px;
+    margin-right: 25px;
 }
 
 .header-right a:hover {
@@ -58,10 +63,8 @@ header {
 }
 
 .top-wrapper {
-    width: 100%;
     padding: 290px 0 100px 0;
-    
-    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('images/web-designer1-res.jpg');   
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('../digitalent-oa-master/images/web-designer1-res.jpg');   
     background-size: cover;
     color: white;
     text-align: center;
@@ -82,14 +85,11 @@ header {
 .top-wrapper h1 {
     font-family: 'Century Gothic';
     font-size: 40px;
-    
     margin-bottom: 10px;
-    
 }
 
 
 .btn {
- 
     background-color: #d2dae2;
     color:rgb(49, 49, 49);
     padding: 14px 28px;
@@ -115,8 +115,6 @@ header {
     color: rgb(49, 49, 49);
     /*set animation */
     background-position: 0% 50%;
-
-
 }
 
 .main-wrapper {
@@ -329,3 +327,20 @@ footer {
     color: black;
     margin-bottom: 40px;
 }
+
+.menu-icon {
+    cursor: pointer;
+    display: inline-block;
+    color:white;
+    font-size: 25px;
+    padding: 21px 21px;
+    position: relative;
+    
+}
+
+
+.hamburger{
+    float: right;
+    display: none;
+}
+

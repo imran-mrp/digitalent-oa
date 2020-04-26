@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>E12 Team</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -14,12 +16,17 @@
             <div class="header-left">
                 <a href="index.html">E12-Team</a>
             </div>
-            <div class="header-right">
+            <div class="hamburger" id="myHamburger" onclick="myFunction()">
+                <span class="fa fa-bars menu-icon"></span>
+            </div>
+
+            <div class="header-right" id="headerRight">
                 <a href="#project">Projects</a>
                 <a href="about.html">About</a>
                 <a href="#contact">Contact</a>
             </div>
         </div>
+
     </header>
 
     <main>
@@ -135,6 +142,18 @@
     <footer>
         <p class="text-footer">Copyright &#169; 2020, E12-Team</p>
     </footer>
+
+    <script>
+        function myFunction() {
+          var x = document.getElementById("headerRight");
+          if (x.className === "header-right") {
+            x.className += " responsive";
+          } else {
+            x.className = "header-right";
+          }
+
+        }
+    </script>
 </body>
 
 </html>

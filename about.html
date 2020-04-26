@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>E12 Team</title>
+    <title>About</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="responsive.css">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
@@ -19,28 +19,14 @@
             <div class="hamburger" id="myHamburger" onclick="myFunction()">
                 <span class="fa fa-bars menu-icon"></span>
             </div>
-
             <div class="header-right" id="headerRight">
-                <a href="#project">Projects</a>
-                <a href="about.html">About</a>
+                <a href="#about">About</a>
                 <a href="#contact">Contact</a>
             </div>
         </div>
-
     </header>
-
     <main>
-        <div class="top-wrapper">
-            <div class="container">
-                <div class="top-title">
-                    <h1>We Make Your Dream Website</h1>
-                    <h1 class="bot-title">Come True</h1>  
-                </div> 
-                <a href="#contact"><button type="button" class="btn contact">Contact Us</button></a>
-            </div>
-        </div>
-
-        <div class="main-wrapper">
+        <div class="main2-wrapper" id="about">
             <div class="container">
                 <div class="heading">
                     <h2>Who Are We?</h2>
@@ -48,75 +34,38 @@
                 <p>E12-Team is a Web Developer Team base in Indonesia. </p>
                 <p>Our team consist of Kurniawan Saputra, KM Shofuan, Hudan, Imran, Imam Syafi'i</p>  
                 <p>We are commit to provide our best service to fullfill your website needs.</p>
-                <a href="about.html"><button type="button" class="btn-more">Read More</button></a>
-            </div>
-        </div>
-
-        <div class="secondary-wrapper">
-            <div class="container">
-                <div class="heading">
-                    <h2>Our Service</h2>
-                </div>
-                <p>We can provide websites of your needs, such as:</p>
-                <div class="services">
-                    <div class="service">
-                        <div class="service-img">
-                            <img src="images/shopping-cart.png" alt="">
+                <div class="profiles" id="myProfiles">
+                    <div class="profile">
+                        <div class="profile-img">
+                            <img src="images/profile.jpg" alt="">
                         </div>
-                        <p class="name">Online Shop</p>
+                        <p class="name">Kurniawan Saputra</p>
                     </div>
 
-                    <div class="service">
-                        <div class="service-img">
-                            <img src="images/company.png" alt="">
+                    <div class="profile">
+                        <div class="profile-img">
+                            <img src="images/profile2.jpg" alt="">
                         </div>
-                        <p class=" name">Company Profile</p>
+                        <p class=" name">KM Shofuan</p>
                     </div>
 
-
-                    <div class="service">
-                        <div class="service-img">
-                            <img src="images/user (2).png" alt="">
+                    <div class="profile">
+                        <div class="profile-img">
+                            <img src="images/profile3.jpg" alt="">
                         </div>
-                        <p class="name">Personal Website</p>
+                        <p class="name">Hudan</p>
                     </div>
-
-                    <div class="service">
-                        <div class="service-img">
-                            <img src="images/gift.png" alt="">
+                    <div class="profile">
+                        <div class="profile-img">
+                            <img src="images/profile4.jpg" alt="">
                         </div>
-                        <p class="name">And many more</p>
+                        <p class="name">Imran</p>
                     </div>
-                </div>
-                <a href="#contact"><button type="button" class="btn-contact">Contact Us</button></a>
-            </div>
-        </div>
-
-        <div class="bottom-wrapper" id="project">
-            <div class="container">
-                <div class="heading">
-                    <h2>Featured Projects</h2>
-                </div>
-                <div class="projects">
-                    <div class="project">
-                        <div class="project-img">
-                            <img src="images/STEP2.jpg" alt="">
+                    <div class="profile">
+                        <div class="profile-img">
+                            <img src="images/profile5.jpg" alt="">
                         </div>
-                        <p class="project-name">STEP</p>
-                    </div>
-
-                    <div class="project">
-                        <div class="project-img">
-                            <img src="images/sunwest.jpg" alt="">
-                        </div>
-                        <p class="project-name">SUN WEST</p>
-                    </div>
-
-                    <div class="project">
-                        <div class="project-img">
-                            <img src="images/svdn.png" alt="">
-                        </div>
-                        <p class="project-name">Sioux Valley</p>
+                        <p class="name">Imam Syafi'i</p>
                     </div>
                 </div>
             </div>
@@ -136,7 +85,6 @@
                 </div>
             </div>
         </div>
-
     </main>
 
     <footer>
@@ -146,11 +94,18 @@
     <script>
         function myFunction() {
           var x = document.getElementById("headerRight");
+          var y = document.getElementById("myProfiles");
           if (x.className === "header-right") {
             x.className += " responsive";
           } else {
             x.className = "header-right";
           }
+          if (x.className === "profiles") {
+            x.className += " responsive";
+          } else {
+            x.className = "profiles";
+          }
+
 
         }
     </script>
